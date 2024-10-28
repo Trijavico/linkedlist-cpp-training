@@ -16,8 +16,6 @@ LinkedList::~LinkedList() {
   }
 }
 
-Node *LinkedList::GetHead() { return _head; }
-Node *LinkedList::GetTail() { return _tail; }
 size_t LinkedList::GetSize() { return _size; }
 
 void LinkedList::Print() {

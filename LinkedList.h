@@ -7,8 +7,6 @@ public:
   LinkedList();
   ~LinkedList();
 
-  Node *GetHead();
-  Node *GetTail();
   size_t GetSize();
 
   void Print();
