@@ -47,10 +47,11 @@ void LinkedList::Update(int value, int newValue) {
   while (current != nullptr) {
     if (current->value != value) {
       current = current->next;
-      break;
+      continue;
     }
 
     current->value = newValue;
+    break;
   }
 }
 

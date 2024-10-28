@@ -1,5 +1,6 @@
 #include "LinkedList.h"
 #include "Node.h"
+#include <iostream>
 using namespace std;
 
 int main() {
@@ -15,5 +16,13 @@ int main() {
   list.Add(three);
   list.Add(four);
 
+  list.Print();
+  cout << endl;
+
+  list.Update(1, 10);
+  list.Print();
+  cout << endl;
+
+  list.Remove(2);
   list.Print();
 }
