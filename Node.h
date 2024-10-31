@@ -1,8 +1,10 @@
 #pragma once
 
-class Node {
+template <typename T> class Node {
 public:
-  Node(int parameter);
-  int value;
+  Node(T parameter);
+  T value;
   Node *next;
 };
+
+template <typename T> Node<T>::Node(T value) : value(value), next(nullptr) {}
